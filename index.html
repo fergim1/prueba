@@ -1511,24 +1511,24 @@
                 <div class="col-lg-6">
                     
                     <!-- Contact Form -->
-                    <form id="contactForm" data-toggle="validator" data-focus="false">
+                    <form id="contactForm" data-toggle="validator" data-focus="false" name="contact" method="POST" data-netlify="true">
                         <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
+                            <input type="text" class="form-control-input" id="cname" required name="name"> 
                             <label class="label-control" for="cname">Name</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <input type="country" class="form-control-input" id="ccountry" required>
+                            <input type="country" class="form-control-input" id="ccountry" required name="country">
                             <label class="label-control" for="ccountry">Country</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
+                            <input type="email" class="form-control-input" id="cemail" required name="email">
                             <label class="label-control" for="cemail">Email</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                            <textarea class="form-control-textarea" id="cmessage" required name="message"></textarea>
                             <label class="label-control" for="cmessage">Your message</label>
                             <div class="help-block with-errors"></div>
                         </div>
