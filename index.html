@@ -73,7 +73,7 @@
                     <a class="nav-link page-scroll" href="#services">SERVICES</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#callMe">BOOK A SAMPLE</a>
+                    <a class="nav-link page-scroll" href="#callMe">FREE LIVE SAMPLE</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#projects">TOURS & LESSONS</a>
@@ -643,7 +643,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <div class="section-title">BOOK A SAMPLE FREE</div>
+                        <div class="section-title">BOOK A FREE LIVE SAMPLE</div>
                         <h2 class="white">Have Us Contact You By Filling And Submitting The Form</h2>
                         <p class="white">We will contact you to coordinate a talk to meet us and to see a live tour with one of our guides, totally free.</p>
                         <!-- <ul class="list-unstyled li-space-lg white">
@@ -665,29 +665,24 @@
                 <div class="col-lg-6">
                    
                     <!-- Call Me Form -->
-                    <form id="callMeForm" data-toggle="validator" data-focus="false">
+                    <form id="callMeForm" data-toggle="validator" data-focus="false" name="sample" method="POST" data-netlify="true">
                         <div class="form-group">
-                            <input type="text" class="form-control-input" id="lname" name="lname" required>
+                            <input type="text" class="form-control-input" id="lname" name="name" required>
                             <label class="label-control" for="lname">Name</label>
                             <div class="help-block with-errors"></div>
                         </div>
-                        <!-- <div class="form-group">
-                            <input type="text" class="form-control-input" id="lphone" name="lphone" required>
-                            <label class="label-control" for="lphone">Phone</label>
-                            <div class="help-block with-errors"></div>
-                        </div> -->
                         <div class="form-group">
-                            <input type="text" class="form-control-input" id="lcity" name="lcity" required>
+                            <input type="text" class="form-control-input" id="lcity" name="country" required>
                             <label class="label-control" for="lcity">City & Country</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control-input" id="lemail" name="lemail" required>
+                            <input type="email" class="form-control-input" id="lemail" name="email" required>
                             <label class="label-control" for="lemail">Email</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <select class="form-control-select" id="lselect" required>
+                            <select class="form-control-select" id="lselect" required name='InterestedIn'>
                                 <option class="select-option" value="" disabled selected>Interested in...</option>
                                 <option class="select-option" value="Off The Ground">Basic</option>
                                 <option class="select-option" value="Accelerated Growth">Plus</option>
@@ -695,16 +690,12 @@
                             </select>
                             <div class="help-block with-errors"></div>
                         </div>
-                        <!-- <div class="form-group checkbox white">
-                            <input type="checkbox" id="lterms" value="Agreed-to-Terms" name="lterms" required>I agree with Aria's stated <a class="white" href="privacy-policy.html">Privacy Policy</a> and <a class="white" href="terms-conditions.html">Terms & Conditions</a>
-                            <div class="help-block with-errors"></div>
-                        </div> -->
                         <div class="form-group">
                             <button type="submit" class="form-control-submit-button">CALL ME</button>
                         </div>
-                        <div class="form-message">
+                        <!-- <div class="form-message">
                             <div id="lmsgSubmit" class="h3 text-center hidden"></div>
-                        </div>
+                        </div> -->
                     </form>
                     <!-- end of call me form -->
                     
@@ -1512,16 +1503,17 @@
                     
 
 
-   <!-- Prueba Formulario -->
+   <!-- Formulario -->
 
    <form data-toggle="validator" data-focus="false" name="contact" method="POST" data-netlify="true">
     <div class="form-group">
       <input type="text" class="form-control-input" name="name" id='cname' required />
-      <label class="label-control" for="cname">Name</label>   
+      <label class="label-control" for="cname">Name</label> 
+      <div class="help-block with-errors"></div>  
     </div>
     <div class="form-group">
       <input type="text" class="form-control-input"name="country" id='ccountry' required />
-      <label class="label-control" for="ccountry">Country</label>  
+      <label class="label-control" for="ccountry">City & Country</label>  
     </div>
     <div class="form-group">
      <input type="email" class="form-control-input" name="email" id='cemail' required/> 
@@ -1529,55 +1521,18 @@
      <div class="help-block with-errors"></div>                       
     </div>
     <div class="form-group">
-    <textarea class="form-control-textarea" id='cmessage' name="message"></textarea>
-    <label class="label-control" for="cmessage">Message</label> 
+        <textarea class="form-control-textarea" id='cmessage' name="message"></textarea>
+        <label class="label-control" for="cmessage">Message</label>
+        <div class="help-block with-errors"></div>
     </div>
-    <div  data-netlify-recaptcha='true'></div>
+    <!-- <div class="form-group">
+        <div  data-netlify-recaptcha='true'></div>
+    </div> -->
     <div class="form-group">
       <button type="submit" class="form-control-submit-button">SUBMIT MESSAGE</button>
     </div>
   </form>
-
-<!-- / Purba Formulario -->
-
-
-                    <!-- Contact Form -->
-                    <!-- <form id="contactForm" data-toggle="validator" data-focus="false" name="contact" method="POST" data-netlify="true">
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required name="name"> 
-                            <label class="label-control" for="cname">Name</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="country" class="form-control-input" id="ccountry" required name="country">
-                            <label class="label-control" for="ccountry">Country</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required name="email">
-                            <label class="label-control" for="cemail">Email</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required name="message"></textarea>
-                            <label class="label-control" for="cmessage">Your message</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group" data-netlify-recaptcha='true'> -->
-                            <!-- <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I agree with Aria's stated <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a> 
-                            <div class="help-block with-errors"></div> -->
-                        <!-- </div>
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">SUBMIT MESSAGE</button>
-                        </div>
-                        <div class="form-message">
-                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
-                        </div>
-                    </form> -->
-                    <!-- end of contact form -->
-
-
-
+<!-- /Formulario -->
 
 
                 </div> <!-- end of col -->
@@ -1656,7 +1611,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">Copyright © 2020 <a href="https://inovatik.com">Template by Inovatik</a></p>
+                    <p class="p-small">Copyright © 2021 PONER NOMBRE </p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
