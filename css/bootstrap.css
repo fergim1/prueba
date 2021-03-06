@@ -401,7 +401,7 @@ h6, .h6 {
   line-height: 1.2;
 }
 
-.display-2 {
+/* .display-2 {
   font-size: 5.5rem;
   font-weight: 300;
   line-height: 1.2;
@@ -417,7 +417,7 @@ h6, .h6 {
   font-size: 3.5rem;
   font-weight: 300;
   line-height: 1.2;
-}
+} */
 
 hr {
   margin-top: 1rem;

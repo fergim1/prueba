@@ -157,10 +157,19 @@
                 <h3 style="color: #e0e0e0; margin-top: 5rem">
                   RESOURCES FOR YOUR
                 </h3>
-                <h1 style="margin-bottom: 2rem">SPANISH CLASS</h1>
-                <a class="btn-solid-lg page-scroll" href="#whoWeAre"
-                  >DISCOVER</a
-                >
+                <h1>SPANISH CLASS</h1>
+                <div class="video__icon">
+                  <div class="circle--outer"></div>
+                  <div class="circle--inner"></div>
+                  <div class="live">         
+                    <h3 style='color: #e0e0e0;'>LIVE</h3>
+                  </div>                  
+                </div>
+  
+                
+                <!-- <a class="btn-solid-lg page-scroll" href="#whoWeAre"
+                  >DISCOVER
+                </a> -->
               </div>
             </div>
             <!-- end of col -->
@@ -925,7 +934,10 @@
           <div class="col-lg-12">
             <!-- Filter -->
             <div class="button-group filters-button-group">
-              <a class="button is-checked" data-filter="*"
+              <a class="button is-checked" data-filter=".top"
+              ><span>TOP</span></a
+            >
+              <a class="button" data-filter="*"
                 ><span>SHOW ALL</span></a
               >
               <a class="button" data-filter=".culinaryExperiences"
@@ -954,8 +966,13 @@
               >
             </div>
             <!-- end of button group -->
+            <!--
+               IMPORTANTE
+              Las experiencias que quiero que aparezcan en el home colocarles top en div class="element-item
+              ejemplo:  <div class="element-item series top">
+             -->
             <div class="grid">
-              <div class="element-item series">
+              <div class="element-item series top">
                 <a class="popup-with-move-anim" href="#project-1"
                   ><div class="element-item-overlay">
                     <span>La Casa de Papel</span>
@@ -963,7 +980,7 @@
                   <img src="images/Experiencias/la-casa-de-papel.jpg" alt="alternative"
                 /></a>
               </div>
-              <div class="element-item cityTours">
+              <div class="element-item cityTours top">
                 <a class="popup-with-move-anim" href="#project-2"
                   ><div class="element-item-overlay">
                     <span>Buenos Aires - Argentina</span>
@@ -973,7 +990,7 @@
                     alt="alternative"
                 /></a>
               </div>
-              <div class="element-item cityTours worldHeritage">
+              <div class="element-item cityTours worldHeritage top">
                 <a class="popup-with-move-anim" href="#project-3"
                   ><div class="element-item-overlay">
                     <span> Río de Janeriro - Brazil</span>
@@ -983,7 +1000,7 @@
                     alt="alternative"
                 /></a>
               </div>
-              <div class="element-item museum">
+              <div class="element-item museum top">
                 <a class="popup-with-move-anim" href="#project-4"
                   ><div class="element-item-overlay">
                     <span>Louvre Museum - París</span>
@@ -993,7 +1010,7 @@
                     alt="alternative"
                 /></a>
               </div>
-              <div class="element-item localTraditions">
+              <div class="element-item localTraditions top">
                 <a class="popup-with-move-anim" href="#project-5"
                   ><div class="element-item-overlay">
                     <span>Mate Tasting</span>
@@ -1001,7 +1018,7 @@
                   <img src="images/Experiencias/mate.jpg" alt="alternative"
                 /></a>
               </div>
-              <div class="element-item cityTours worldHeritage">
+              <div class="element-item cityTours worldHeritage top">
                 <a class="popup-with-move-anim" href="#project-6"
                   ><div class="element-item-overlay">
                     <span>Machu Picchu - Perú</span>
@@ -1011,7 +1028,7 @@
                     alt="alternative"
                 /></a>
               </div>
-              <div class="element-item culinaryExperiences localTraditions">
+              <div class="element-item culinaryExperiences localTraditions top">
                 <a class="popup-with-move-anim" href="#project-7"
                   ><div class="element-item-overlay">
                     <span>Empanadas Cooking Class</span>
@@ -1021,7 +1038,7 @@
                     alt="alternative"
                 /></a>
               </div>
-              <div class="element-item cityTours">
+              <div class="element-item cityTours top">
                 <a class="popup-with-move-anim" href="#project-8"
                   ><div class="element-item-overlay">
                     <span>London - UK</span>
@@ -1031,7 +1048,7 @@
                     alt="alternative"
                 /></a>
               </div>
-              <!-- <div class="element-item cityTours">
+              <div class="element-item cityTours">
                 <a class="popup-with-move-anim" href="#project-9"
                   ><div class="element-item-overlay">
                     <span>Berlín - Germany</span>
@@ -1066,8 +1083,8 @@
                     src="images/Experiencias/peru-ceviche.jpg"
                     alt="alternative"
                 /></a>
-              </div> -->
-              <!-- <div class="element-item culturalExperiences">
+              </div>
+              <div class="element-item culturalExperiences">
                 <a class="popup-with-move-anim" href="#project-13"
                   ><div class="element-item-overlay">
                     <span>Gaucho Argentino</span>
@@ -1131,6 +1148,7 @@
                     alt="alternative"
                 /></a>
               </div>
+
               <div class="element-item culinaryExperiences">
                 <a class="popup-with-move-anim" href="#project-20"
                   ><div class="element-item-overlay">
@@ -1140,7 +1158,30 @@
                     src="images/Experiencias/causa-limeña.jpg"
                     alt="alternative"
                 /></a>
-              </div> -->
+              </div>
+
+              <div class="element-item cityTours">
+                <a class="popup-with-move-anim" href="#project-21"
+                  ><div class="element-item-overlay">
+                    <span>Egyptian pyramids</span>
+                  </div>
+                  <img
+                    src="images/Experiencias/Piramides-de-Egipto.jpg"
+                    alt="alternative"
+                /></a>
+              </div>
+
+              <div class="element-item movies">
+                <a class="popup-with-move-anim" href="#project-22"
+                  ><div class="element-item-overlay">
+                    <span>Titanic</span>
+                  </div>
+                  <img
+                    src="images/Experiencias/Titanic-2.jpg"
+                    alt="alternative"
+                /></a>
+              </div>
+
             </div>
             <!-- end of grid -->
             <!-- end of filter -->
@@ -1156,7 +1197,8 @@
 
 
     <!-- Project Lightboxes -->
-    <!-- Lightbox -->
+
+    <!-- Lightbox La Casa de Papel -->
     <div id="project-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
       <div class="row">
         <button title="Close (Esc)" type="button" class="mfp-close x-button">
@@ -1200,9 +1242,10 @@
       <!-- end of row -->
     </div>
     <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
+    <!-- end of La Casa de Papel lightbox -->
 
-    <!-- Lightbox -->
+
+    <!-- Lightbox Buenos Aires - Argentina -->
     <div id="project-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
       <div class="row">
         <button title="Close (Esc)" type="button" class="mfp-close x-button">
@@ -1245,9 +1288,10 @@
       <!-- end of row -->
     </div>
     <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
+    <!-- end of Buenos Aires - Argentina lightbox -->
 
-    <!-- Lightbox -->
+
+    <!-- Lightbox Río de Janeiro - Brazil -->
     <div id="project-3" class="lightbox-basic zoom-anim-dialog mfp-hide">
       <div class="row">
         <button title="Close (Esc)" type="button" class="mfp-close x-button">
@@ -1291,9 +1335,10 @@
       <!-- end of row -->
     </div>
     <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
+    <!-- end of Río de Janeiro - Brazil lightbox -->
 
-    <!-- Lightbox -->
+
+    <!-- Lightbox Louvre Museum - París-->
     <div id="project-4" class="lightbox-basic zoom-anim-dialog mfp-hide">
       <div class="row">
         <button title="Close (Esc)" type="button" class="mfp-close x-button">
@@ -1334,9 +1379,10 @@
       <!-- end of row -->
     </div>
     <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
+    <!-- end of Louvre Museum - París lightbox -->
 
-    <!-- Lightbox -->
+
+    <!-- Lightbox Mate Tasting -->
     <div id="project-5" class="lightbox-basic zoom-anim-dialog mfp-hide">
       <div class="row">
         <button title="Close (Esc)" type="button" class="mfp-close x-button">
@@ -1385,9 +1431,10 @@
       <!-- end of row -->
     </div>
     <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
+    <!-- end of Mate Tasting lightbox -->
 
-    <!-- Lightbox -->
+
+    <!-- Lightbox Machu Picchu - Perú-->
     <div id="project-6" class="lightbox-basic zoom-anim-dialog mfp-hide">
       <div class="row">
         <button title="Close (Esc)" type="button" class="mfp-close x-button">
@@ -1406,23 +1453,19 @@
           <hr class="line-heading" />
           <h6>City Tour</h6>
           <p >
-            Virtual Machu picchu Tour with an Expert local Tour Guide. It is a
-            licensed guide led webinar packed with photos, videos. This tour is
-            a live satisfying all your questions about Machu picchu. enjoy this
-            exciting, interactive experience from the comfort of your home.
-            Machu picchu is always a good place to go. While planning your trip
-            to the Inca city, let´s take a virtual tour of Machu picchu visiting
-            the most important sites so you will know exactly where to go later
-            (here in person). Yes, during the virtual tour i will show you the
-            best places in Machu picchu where we can take the most famous
-            pictures of Machu picchu .. Yes, the ones you see in internet.
+            Visit one of the New Seven Wonders of the Modern World, this magnificent Sanctuary belongs to the List of World Heritage of Unesco since 1983. Machu Picchu is a masterpiece of architecture and engineering.
+            Machu Picchu was rediscovered by the American archaeologist Hiram Bingham in 1911. Through the years, scientists and archaeologists have made many studies and investigations about Machu Picchu to find out the mysterious that this sanctuary has.
+            Many travelers around the world come to visit these fantastic ruins at the top of the mountain and are impressed by the beauty that surrounds it. 
+            We will visit the main sections of this amazing citadel while we practice our Spanish.
           </p>
-          <!-- <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p>
+          <!-- <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p> -->
                 <div class="testimonial-container">
-                    <p class="testimonial-text">Need a solid foundation for your business growth plans? Aria will help you manage sales and meet your current requirements.</p>
-                    <p class="testimonial-author">General Manager</p>
-                </div> -->
-          <a class="btn-solid-reg" href="#your-link">DETAILS</a>
+                    <p class="testimonial-text">
+                      REQUIRED LEVEL: A2 to C1
+                    </p>
+                    <!-- <p class="testimonial-author">General Manager</p> -->
+                </div>
+          <!-- <a class="btn-solid-reg" href="#your-link">DETAILS</a> -->
           <a class="btn-outline-reg mfp-close as-button" href="#projects"
             >BACK</a
           >
@@ -1432,9 +1475,10 @@
       <!-- end of row -->
     </div>
     <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
+    <!-- end of Machu Picchu - Perú lightbox -->
 
-    <!-- Lightbox -->
+
+    <!-- Lightbox Empanadas Cooking Class -->
     <div id="project-7" class="lightbox-basic zoom-anim-dialog mfp-hide">
       <div class="row">
         <button title="Close (Esc)" type="button" class="mfp-close x-button">
@@ -1476,9 +1520,10 @@
       <!-- end of row -->
     </div>
     <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
+    <!-- end of Empanadas Cooking Class lightbox -->
 
-    <!-- Lightbox -->
+
+    <!-- Lightbox London - UK -->
     <div id="project-8" class="lightbox-basic zoom-anim-dialog mfp-hide">
       <div class="row">
         <button title="Close (Esc)" type="button" class="mfp-close x-button">
@@ -1523,9 +1568,10 @@
       <!-- end of row -->
     </div>
     <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
+    <!-- end of London - UK lightbox -->
 
-    <!-- Lightbox -->
+
+    <!-- Lightbox Berlín - Germany -->
     <div id="project-9" class="lightbox-basic zoom-anim-dialog mfp-hide">
       <div class="row">
         <button title="Close (Esc)" type="button" class="mfp-close x-button">
@@ -1571,9 +1617,10 @@
       <!-- end of row -->
     </div>
     <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
+    <!-- end of Berlín - Germany lightbox -->
 
-    <!-- Lightbox -->
+
+    <!-- Lightbox Iguassu Falls -->
     <div id="project-10" class="lightbox-basic zoom-anim-dialog mfp-hide">
       <div class="row">
         <button title="Close (Esc)" type="button" class="mfp-close x-button">
@@ -1616,9 +1663,10 @@
       <!-- end of row -->
     </div>
     <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
+    <!-- end of Iguassu Falls lightbox -->
 
-    <!-- Lightbox -->
+
+    <!-- Lightbox Rome - Italy -->
     <div id="project-11" class="lightbox-basic zoom-anim-dialog mfp-hide">
       <div class="row">
         <button title="Close (Esc)" type="button" class="mfp-close x-button">
@@ -1661,9 +1709,10 @@
       <!-- end of row -->
     </div>
     <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
+    <!-- end of Rome - Italy lightbox -->
 
-    <!-- Lightbox -->
+
+    <!-- Lightbox Ceviche Peruano -->
     <div id="project-12" class="lightbox-basic zoom-anim-dialog mfp-hide">
       <div class="row">
         <button title="Close (Esc)" type="button" class="mfp-close x-button">
@@ -1706,9 +1755,10 @@
       <!-- end of row -->
     </div>
     <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
+    <!-- end of Ceviche Peruano lightbox -->
 
-    <!-- Lightbox -->
+
+    <!-- Lightbox Gaucho Argentino -->
     <div id="project-13" class="lightbox-basic zoom-anim-dialog mfp-hide">
       <div class="row">
         <button title="Close (Esc)" type="button" class="mfp-close x-button">
@@ -1751,9 +1801,10 @@
       <!-- end of row -->
     </div>
     <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
+    <!-- end of Gaucho Argentino lightbox -->
 
-    <!-- Lightbox -->
+
+    <!-- Lightbox National Gallery - London -->
     <div id="project-14" class="lightbox-basic zoom-anim-dialog mfp-hide">
       <div class="row">
         <button title="Close (Esc)" type="button" class="mfp-close x-button">
@@ -1796,9 +1847,10 @@
       <!-- end of row -->
     </div>
     <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
+    <!-- end of National Gallery - London lightbox -->
 
-    <!-- Lightbox -->
+
+    <!-- Lightbox París - France -->
     <div id="project-15" class="lightbox-basic zoom-anim-dialog mfp-hide">
       <div class="row">
         <button title="Close (Esc)" type="button" class="mfp-close x-button">
@@ -1841,9 +1893,10 @@
       <!-- end of row -->
     </div>
     <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
+    <!-- end of París - France lightbox -->
 
-    <!-- Lightbox -->
+
+    <!-- Lightbox Barcelona - Spain -->
     <div id="project-16" class="lightbox-basic zoom-anim-dialog mfp-hide">
       <div class="row">
         <button title="Close (Esc)" type="button" class="mfp-close x-button">
@@ -1886,9 +1939,10 @@
       <!-- end of row -->
     </div>
     <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
+    <!-- end of Barcelona - Spain lightbox -->
 
-    <!-- Lightbox -->
+
+    <!-- Lightbox  Petra - Jordan -->
     <div id="project-17" class="lightbox-basic zoom-anim-dialog mfp-hide">
       <div class="row">
         <button title="Close (Esc)" type="button" class="mfp-close x-button">
@@ -1931,9 +1985,10 @@
       <!-- end of row -->
     </div>
     <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
+    <!-- end of Petra - Jordan lightbox -->
 
-    <!-- Lightbox -->
+
+    <!-- Lightbox British Museum - London-->
     <div id="project-18" class="lightbox-basic zoom-anim-dialog mfp-hide">
       <div class="row">
         <button title="Close (Esc)" type="button" class="mfp-close x-button">
@@ -1976,9 +2031,10 @@
       <!-- end of row -->
     </div>
     <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
+    <!-- end of British Museum - London lightbox -->
 
-    <!-- Lightbox -->
+
+    <!-- Lightbox Uffizi Gallery -->
     <div id="project-19" class="lightbox-basic zoom-anim-dialog mfp-hide">
       <div class="row">
         <button title="Close (Esc)" type="button" class="mfp-close x-button">
@@ -2021,9 +2077,10 @@
       <!-- end of row -->
     </div>
     <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
+    <!-- end of Uffizi Gallery lightbox -->
 
-    <!-- Lightbox -->
+
+    <!-- Lightbox Causa Limeña - Perú -->
     <div id="project-20" class="lightbox-basic zoom-anim-dialog mfp-hide">
       <div class="row">
         <button title="Close (Esc)" type="button" class="mfp-close x-button">
@@ -2042,21 +2099,64 @@
           <hr class="line-heading" />
           <h6>Culinary Experiences</h6>
           <p>
-            Need a solid foundation for your business growth plans? Aria will
-            help you manage sales and meet your current needs
-          </p>
+            Falta descripción     
+           </p>
+           <!-- <p>
+             By offering the best professional services and quality products in
+             the market. Don't hesitate and get in touch with us.
+           </p> -->
+           <div class="testimonial-container">
+             <p class="testimonial-text">
+               REQUIRED LEVEL: A2 to C1
+             </p>
+             <!-- <p class="testimonial-author">General Manager</p> -->
+           </div>
+           <!-- <a class="btn-solid-reg" href="#your-link">DETAILS</a> -->
+           <a class="btn-outline-reg mfp-close as-button" href="#projects"
+             >BACK</a
+           >
+         </div>
+         <!-- end of col -->
+       </div>
+       <!-- end of row -->
+     </div>
+     <!-- end of lightbox-basic -->
+     <!-- end of Causa Limeña - Perú lightbox -->
+    
+
+
+     <!-- Lightbox Egyptian pyramids -->
+     <div id="project-21" class="lightbox-basic zoom-anim-dialog mfp-hide">
+      <div class="row">
+        <button title="Close (Esc)" type="button" class="mfp-close x-button">
+          ×
+        </button>
+        <div class="col-lg-8">
+          <img
+            class="img-fluid"
+            src="images/Experiencias/Piramides-de-Egipto.jpg"
+            alt="alternative"
+          />
+        </div>
+        <!-- end of col -->
+        <div class="col-lg-4">
+          <h3>Egyptian pyramids</h3>
+          <hr class="line-heading" />
+          <h6>City Tour</h6>
           <p>
+           Falta descripción     
+          </p>
+          <!-- <p>
             By offering the best professional services and quality products in
             the market. Don't hesitate and get in touch with us.
-          </p>
+          </p> -->
           <div class="testimonial-container">
             <p class="testimonial-text">
-              Need a solid foundation for your business growth plans? Aria will
-              help you manage sales and meet your current requirements.
+              REQUIRED LEVEL: A2 to C1
             </p>
-            <p class="testimonial-author">General Manager</p>
+            <!-- <p class="testimonial-author">General Manager</p> -->
           </div>
-          <a class="btn-solid-reg" href="#your-link">DETAILS</a>
+          <!-- <a class="btn-solid-reg" href="#your-link">DETAILS</a> -->
           <a class="btn-outline-reg mfp-close as-button" href="#projects"
             >BACK</a
           >
@@ -2068,7 +2168,55 @@
     <!-- end of lightbox-basic -->
     <!-- end of lightbox -->
 
-    <!-- end of project lightboxes -->
+    <!-- end of Egyptian pyramids lightboxes -->
+
+
+
+     <!-- Lightbox TITANIC -->
+     <div id="project-22" class="lightbox-basic zoom-anim-dialog mfp-hide">
+      <div class="row">
+        <button title="Close (Esc)" type="button" class="mfp-close x-button">
+          ×
+        </button>
+        <div class="col-lg-8">
+          <img
+            class="img-fluid"
+            src="images/Experiencias/Titanic-2.jpg"
+            alt="alternative"
+          />
+        </div>
+        <!-- end of col -->
+        <div class="col-lg-4">
+          <h3>Titanic</h3>
+          <hr class="line-heading" />
+          <h6>Movies</h6>
+          <p>
+            Falta Descripción 
+            
+          </p>
+          <!-- <p>
+            By offering the best professional services and quality products in
+            the market. Don't hesitate and get in touch with us.
+          </p> -->
+          <div class="testimonial-container">
+            <p class="testimonial-text">
+              REQUIRED LEVEL: A2 to C1
+            </p>
+            <!-- <p class="testimonial-author">General Manager</p> -->
+          </div>
+          <!-- <a class="btn-solid-reg" href="#your-link">DETAILS</a> -->
+          <a class="btn-outline-reg mfp-close as-button" href="#projects"
+            >BACK</a
+          >
+        </div>
+        <!-- end of col -->
+      </div>
+      <!-- end of row -->
+    </div>
+    <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+
+    <!-- end of Ticanic lightboxes -->
 
 
     
